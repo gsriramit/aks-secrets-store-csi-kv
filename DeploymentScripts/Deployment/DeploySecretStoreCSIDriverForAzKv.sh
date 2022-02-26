@@ -25,7 +25,8 @@ az extension add --name aks-preview
 az group create --location $RESOURCEGROUP_LOCATION --name $RESOURCEGROUP_NAME --subscription $SUBSCRIPTION_ID 
 
 # Create an RBAC enabled AKS cluster
-az aks create -g $RESOURCEGROUP_NAME -n $CLUSTER_NAME --enable-aad --enable-azure-rbac --enable-pod-identity --network-plugin azure --node-count 1 --enable-addons monitoring
+az aks create -g $RESOURCEGROUP_NAME -n $CLUSTER_NAME --enable-aad --enable-azure-rbac --network-plugin azure --node-count 1 --enable-addons monitoring
+##--enable-pod-identity
 
 # for this demo, we will be deploying a user-assigned identity to the AKS node resource group
 export IDENTITY_RESOURCE_GROUP="$(az aks show -g ${RESOURCEGROUP_NAME} -n ${CLUSTER_NAME} --query nodeResourceGroup -otsv)"
