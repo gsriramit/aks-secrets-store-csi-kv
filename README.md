@@ -11,6 +11,10 @@ Implementation of the Secrets Store CSI Driver for Azure KeyVault.The key take a
 ![basic-key-vault](https://user-images.githubusercontent.com/13979783/155843649-9fc9ae38-1cc9-4c97-96ea-202ac229a4d7.svg)
 src: Microsoft docs (https://docs.microsoft.com/en-us/azure/aks/developer-best-practices-pod-security#use-azure-key-vault-with-secrets-store-csi-driver)
 
+## Detailed Flow Diagram
+![Security Baseline Architecture - Secrets Store CSI- Flow](https://user-images.githubusercontent.com/13979783/155934928-85f498dd-d36f-4cc0-b0a8-72330ba8431c.png)
+
+
 
 ## References
 1. Developer Best Practices -https://docs.microsoft.com/en-us/azure/aks/developer-best-practices-pod-security#use-azure-key-vault-with-secrets-store-csi-driver
